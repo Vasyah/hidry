@@ -1,0 +1,40 @@
+:root {
+    --fontSize: 14px;
+    --font: 'Montserrat', sans-serif;
+    --fontColor: #000;
+    --main-color: #fbba3c;
+    --strong-cyan: #1abc9c;
+    --dark-cyan: #16a085;
+    --lime-green: #2ecc71;
+    --moder-violet: #9b59b6;
+    --very-dark-blue: #34495e;
+    --vi-yellow: #f1c40f;
+    --vi-orange: #e67e22;
+    --bright-red: #e74c3c;
+    --gray-blue: #bdc3c7;
+    // grid
+    --cols: 12;
+    --grid-gap: 24px;
+    --span: 1;
+
+    --card-span: 3;
+    --card-col-gap: 16px;
+    --card-row-gap: 24px; // category
+    --card-img-h: 172px;
+    --bg-cat: #e95342;
+    // header
+    --header-bg: #fff;
+    // filter
+    --filter-bg: #F2F2F2;
+}
+// DESKTOP from 1024-1232
+$media-xl: 1231px;
+// TAB from 640-1023
+$media-lg:1023px;
+// MOBILE from 0-640
+$media-md:639px;
+
+$content-w: 1232px;
+$lg: 1024px;
+$mid: 639px;
+$main-padding: 40px;

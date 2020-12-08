@@ -1,0 +1,77 @@
+
+// TEMPLATE
+%centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// MIXINS
+// SPACES
+@mixin space($type:margin, $direction:all, $amount:$medium, $r:inherit, $b:inherit, $l:inherit) {
+    @if $type==padding {
+        @if $direction==all {
+            padding: $amount $r $b $l;
+        }
+
+        @else if $direction==top {
+            padding-top: $amount
+        }
+
+        @else if $direction==left {
+            padding-left: $amount
+        }
+
+        @else if $direction==right {
+            padding-right: $amount
+        }
+
+        @else {
+            padding-bottom: $amount
+        }
+    }
+
+    @else {
+        @if $direction==all {
+            margin: $amount $r $b $l;
+        }
+
+        @else if $direction==top {
+            margin-top: $amount
+        }
+
+        @else if $direction==left {
+            margin-left: $amount
+        }
+
+        @else if $direction==right {
+            margin-right: $amount
+        }
+
+        @else {
+            margin-bottom: $amount
+        }
+    }
+}
+
+// PSEUDOELEMENTS
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+@mixin font($fsz: inherit, $fw: inherit, $lh: inherit, $color: inherit, $font: inherit) {
+    font-family: $font;
+    font-size: $fsz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}

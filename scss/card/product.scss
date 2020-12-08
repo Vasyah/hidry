@@ -1,0 +1,102 @@
+@import "../common/mixin.scss";
+@import "../common/vars.scss";
+
+.product-card {
+    &__img-wrapper {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    &__img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @media (max-width: $media-lg) {
+        grid-row-gap: 2.4rem;
+        &__aside {
+            --span: 12;
+        }
+        &__main {
+            --span: 12;
+        }
+    }
+
+    // mob
+    @media (max-width: $media-md) {
+        grid-row-gap: 1.7rem;
+    }
+}
+
+.product-info {
+    padding: 0;
+    @include space(margin, bottom, 1.8rem);
+
+    &__title {
+        @include font(2rem, 600, 2.4rem);
+        @include space(margin, bottom, 1rem);
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        @include font(1.6rem, inherit, 2rem);
+        @include space(padding, all, 0.6rem, 0.8rem, 0.6rem, 0.8rem);
+        &--sm {
+            flex-grow: 3;
+            flex-basis: 40%;
+            opacity: 0.5;
+            margin-right: 2rem;
+        }
+
+        &--md {
+            flex-grow: 4;
+            flex-basis: 60%;
+        }
+
+        &:nth-child(2n + 1) {
+            background-color: rgba(196, 196, 196, 0.1);
+        }
+
+        @media (max-width: $media-md){
+            @include space(padding, all, 0.6rem, 2rem, 0.6rem, 2rem);
+        }
+    }
+
+    &__price,
+    &__price--title,
+    &__btn-wrapper {
+        @include space(padding, left, 0.8rem);
+        
+        @media (max-width: $media-md){
+            @include space(padding, left, 2rem);
+
+        }
+    }
+
+    &__price {
+        @include space(margin, bottom, 1.4rem);
+        @include font(3.2rem, 600, 3.9rem, var(--main-color));
+        &--title {
+            @include space(margin, bottom, 0.8rem);
+            @include font(1.6rem, 500, 2rem);
+        }
+    }
+
+    &__btn {
+        @include space(padding, all, 1rem, 2rem, 1rem, 2rem);
+        @include space(margin, right, 1.1rem);
+        font-weight: 500;
+
+        &--sm {
+            @include space(padding, all, 1rem, 1rem, 1rem, 1rem);
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: $media-lg) {
+    }
+    @media (max-width: $media-md) {
+        &__title {
+            text-align: center;
+        }
+    }
+}

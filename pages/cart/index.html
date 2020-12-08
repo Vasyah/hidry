@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <!-- main styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- curr page styles -->
+    <link rel="stylesheet" href="../../css/cart/cart.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg">
+    <div class="wrapper">
+        <div class="cart hide">
+            <div class="cart__header">
+                <h3 class="cart__title">
+                    Ваша корзина
+                </h3>
+                <button class="btn btn--sm btn--f cart__btn">
+                    <svg class="" width="14" height="14">
+                        <use xlink:href="../../icons/main_0.svg#cancel"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="products cart__products">
+                <li class="products__item product product--header">
+                    <div class="product__cb">
+                        <label for="id-1" class="product__label cb">
+                            <input class="product__field cb__input" id="id-1" type="checkbox">
+                            <div class="product__img--wrp cb__content">
+                                Выбрать всё
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="product__del">
+                        <button class="btn btn--sm product__del-btn">
+                            Удалить всё
+                        </button>
+                    </div>
+                    <div class="product__cart-icon product__cart-icon--rst">
+                        <button class="btn btn--sm btn--f">
+                            <svg class="" width="18" height="18">
+                                <use xlink:href="../../icons/main_0.svg#trash"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="products__item product">
+                    <div class="product__cb">
+                        <label for="id-1" class="product__label cb">
+                            <input class="product__field cb__input" id="id-1" type="checkbox">
+                            <div class="product__img--wrp cb__content">
+                                <img src="../../img/dog-1.png" alt="Айну" class="product__img">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="product__title">Айну</div>
+                    <div class="product__qnt product-qnt">
+                        <button class="product-qnt__btn btn btn--sm">-</button>
+                        <span class="product-qnt__item">1</span>
+                        <button class="product-qnt__btn btn btn--sm">+</button>
+                    </div>
+                    <div class="product__price">12000
+                        <span class="product__price--currency">₽</span>
+                    </div>
+                    <div class="product__cart-icon">
+                        <button class="btn btn--sm btn--f">
+                            <svg class="" width="18" height="18">
+                                <use xlink:href="../../icons/main_0.svg#trash"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="products__item product">
+                    <div class="product__cb">
+                        <label for="id-1" class="product__label cb">
+                            <input class="product__field cb__input" id="id-1" type="checkbox">
+                            <div class="product__img--wrp cb__content">
+                                <img src="../../img/dog-3.png" alt="Айну" class="product__img">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="product__title">Афганская Борзая</div>
+                    <div class="product__qnt product-qnt">
+                        <button class="product-qnt__btn btn btn--sm">-</button>
+                        <span class="product-qnt__item">1</span>
+                        <button class="product-qnt__btn btn btn--sm">+</button>
+                    </div>
+                    <div class="product__price">12000
+                        <span class="product__price--currency">₽</span>
+                    </div>
+                    <div class="product__cart-icon">
+                        <button class="btn btn--sm btn--f">
+                            <svg class="" width="18" height="18">
+                                <use xlink:href="../../icons/main_0.svg#trash"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="cart__total">
+                <span class="cart__total--qnt">2</span> товара на сумму
+                <span class="cart__total--sum">
+                    27000<span class="cart__total--sum-currency">₽</span>
+                </span>
+            </div>
+            <div class="cart__btn">
+                <button class="btn btn-main btn--s">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-top header">
+            <div class="grid-item grid-item--1 header__logo-wrp centered">
+                <a href="javascript:void(0)" class="header__logo">
+                    <svg class="icon-logo" viewBox="0 0 108 78">
+                        <use xlink:href="../../icons/main.svg#icon_logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <!-- CATALOG BTN-->
+            <div class="grid-item grid-item--2 header__btn-wrp">
+                <button class="btn btn-main btn--xl btn-main--catalog    header__btn">
+                    <svg class="header__btn-icon" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="../../icons/main_0.svg#burger"></use>
+                    </svg>
+                    <span class="header__btn-text">Каталог</span>
+                </button>
+            </div>
+            <!-- SEARCH FORM -->
+            <div class="grid-item grid-item--5 form header__form form__icon form__icon--search">
+                <input id="header-search" type="text"
+                    class="input-text form__search  form__form__search--focus form__search--icon-space form__search--header"
+                    placeholder="Поиск">
+                <button class="btn btn-main btn-main--header form__btn form__btn--header">Найти</button>
+            </div>
+            <!-- NAV -->
+            <nav class="grid-item grid-item--4 header__nav">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon_phone" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_phone"></use>
+                            </svg>
+                            <span>Бонусы</span>
+                        </a>
+
+                    </li>
+                    <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_box"></use>
+                            </svg>
+                            <span>Заказы</span>
+                        </a></li>
+                    <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_award"></use>
+                            </svg>
+                            <span>Акции</span>
+                        </a></li>
+                    <li class="nav__item nav__item--cart"><a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_cart"></use>
+                            </svg>
+                            <span>Корзина <small>(5)</small> </span>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- CATALOG -->
+    <div class="wrapper-fluid">
+        <div class="wrapper">
+            <div class="breadcrumps breadcrumps--space ">
+
+                <ul class="breadcrumps-list">
+                    <li class="breadcrumps-list__item">
+                        <a class="breadcrumps-list__link" href="javascript:void(0)">Каталог товаров</a>
+                    </li>
+
+                    <li class="breadcrumps-list__item breadcrumps__item">
+                        <a class="breadcrumps-list__link" href="javascript:void(0)">Собачки</a>
+                    </li>
+
+                    <li class="breadcrumps-list__item breadcrumps__item--current">
+                        <a class="breadcrumps-list__link" href="javascript:void(0)">Айну</a>
+                    </li>
+                </ul>
+                <div class="breadcrumps__title">Айну</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <!-- GRID -->
+        <form action="#" class="purchase">
+            <div class="grid grid-main grid-main-product-mob bg-content">
+
+                <!-- <div class="grid-item grid-item--8"> -->
+                <fieldset class="purchase__contact grid-item grid-item--4">
+                    <legend class="purchase__title">Получатель</legend>
+                    <label for="user-name" class="form purchase__field">
+                        <span class="purchase__text">Имя</span>
+                        <input id="user-name" type="text"
+                            class="purchase__input input-text form__search  form__form__search--focus"
+                            placeholder="Владимир">
+                    </label>
+                    <label for="user-phone" class="form purchase__field">
+                        <span class="purchase__text">Телефон</span>
+                        <input id="user-phone" type="tel"
+                            class="purchase__input input-text form__search  form__form__search--focus"
+                            placeholder="+0 000-000-00-00">
+                    </label>
+                </fieldset>
+
+                <fieldset class="purchase__contact grid-item grid-item--4">
+                    <legend class="purchase__title">Способ доставки</legend>
+                    <label for="delivery-pickup" class="cb form purchase__field">
+                        <input id="delivery-pickup" type="radio" name="delivery" class="cb__input">
+                        <span class="cb__content cb__content--rb purchase__text">Самовывоз</span>
+                    </label>
+                    <label for="delivery-courier" class="cb form purchase__field">
+                        <input id="delivery-courier" type="radio" name="delivery" class="cb__input">
+                        <span class="cb__content cb__content--rb purchase__text">Курьер</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="purchase__contact grid-item grid-item--8">
+                    <div class="purchase__title--total cart__total--text cart__total--space">
+                        <span class="purchase__total--qnt">2</span> товара на сумму
+                        <span class="purchase__total--sum">
+                            27000<span class="purchase__total--sum-currency">₽</span>
+                        </span>
+                    </div>
+                    <ul class="products cart__products ">
+
+                        <li class="products__item product product--cart-size">
+                            <div class="product__img--wrp">
+                                <img src="../../img/dog-1.png" alt="Айну" class="product__img">
+                            </div>
+                            <div class="product__title">Айну</div>
+                            <div class="product__qnt product__qnt--custom product-qnt">
+                                <span class="product-qnt__item"><span>1</span> шт.</span>
+                            </div>
+                            <div class="product__price">12000
+                                <span class="product__price--currency">₽</span>
+                            </div>
+                        </li>
+                        <li class="products__item product product--cart-size">
+                            <div class="product__img--wrp">
+                                <img src="../../img/dog-2.png" alt="Айну" class="product__img">
+                            </div>
+                            <div class="product__title">Афганская борзая</div>
+                            <div class="product__qnt product__qnt--custom product-qnt">
+                                <span class="product-qnt__item"><span>1</span> шт.</span>
+                            </div>
+                            <div class="product__price">12000
+                                <span class="product__price--currency">₽</span>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="purchase__contact grid-item grid-item--3">
+                    <ul class="purchase-total">
+                        <li class="purchase-total__item">
+                            <span class="purchase-total__text">Сумма заказа</span>
+                            <span class="purchase-total__sum">27 000<span class="purchase-total__sum--currency"> ₽</span></span>
+                        </li>
+                        <li class="purchase-total__item">
+                            <span class="purchase-total__text">Самовывоз</span>
+                            <span class="purchase-total__sum">0<span class="purchase-total__sum--currency"> ₽</span></span>
+                        </li>
+                        <li class="purchase-total__item purchase-total__item--main">
+                            <span class="purchase-total__text">Итого с доставкой</span>
+                            <span class="purchase-total__sum">27 000<span class="purchase-total__sum--currency"> ₽</span></span>
+                        </li>
+                    </ul>
+                    
+                    <div class="cart__btn">
+                        <button class="btn btn-main btn--s purchase__btn">
+                            Оформить заказ
+                        </button>
+                    </div>
+                </fieldset>
+                </main>
+            </div>
+        </form>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="../../script/script.js"></script>
+</body>
+
+</html>

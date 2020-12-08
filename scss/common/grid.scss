@@ -1,0 +1,94 @@
+// WRAPPER
+.wrapper {
+    max-width: $content-w;
+    margin: 0 auto;
+}
+
+// GRID
+.grid {
+    display: grid;
+    grid-column-gap: var(--grid-gap);
+    grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+
+    &-top {
+        align-items: center;
+    }
+
+    &-main {
+        grid-template-rows: auto;
+        @include space(padding, all, 2.4rem, 0, 6.8rem, 0);
+
+        @media (max-width: $media-lg) {
+            @include space(padding, all, 2.4rem, 2.4rem, 2.4rem, 2.4rem);
+        }
+    }
+
+    &-main-product-mob {
+        @media (max-width: $media-md) {
+            @include space(padding, all, 2.4rem, 0, 5rem, 0);
+        }
+    }
+
+    @media (max-width: $media-md) {
+    }
+}
+
+.grid-item {
+    min-width: 0;
+    width: 100%;
+    grid-column: span var(--span);
+
+    &--1 {
+        --span: 1;
+    }
+    &--2 {
+        --span: 2;
+    }
+    &--3 {
+        --span: 3;
+    }
+    &--4 {
+        --span: 4;
+    }
+    &--5 {
+        --span: 5;
+    }
+    &--6 {
+        --span: 6;
+    }
+    &--7 {
+        --span: 7;
+    }
+    &--8 {
+        --span: 8;
+    }
+    &--9 {
+        --span: 9;
+    }
+    &--10 {
+        --span: 10;
+    }
+    &--11 {
+        --span: 11;
+    }
+    &--12 {
+        --span: 12;
+    }
+    &--full{
+        @media (max-width: $media-lg) {
+            --span: 12;
+        }
+    }
+}
+
+.grid-card {
+    grid-column: span var(--card-span);
+
+    @media (max-width: $media-lg) {
+        --card-span: 6;
+    }
+
+    @media (max-width: $media-md) {
+        --card-span: 12;
+    }
+}

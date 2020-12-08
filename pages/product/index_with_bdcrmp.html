@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <!-- main styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- curr page styles -->
+    <link rel="stylesheet" href="../../css/card/product.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- CART -->
+        <div class="cart hide">
+            <div class="cart__header">
+                <h3 class="cart__title">
+                    Ваша корзина
+                </h3>
+                <button class="btn btn--sm btn--f cart__btn">
+                    <svg class="" width="14" height="14">
+                        <use xlink:href="../../icons/main_0.svg#cancel"></use>
+                    </svg>
+                </button>
+            </div>
+            <ul class="products cart__products">
+                <li class="products__item product product--header">
+                    <div class="product__cb">
+                        <label for="id-1" class="product__label cb">
+                            <input class="product__field cb__input" id="id-1" type="checkbox">
+                            <div class="product__img--wrp cb__content">
+                                Выбрать всё
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="product__del">
+                        <button class="btn btn--sm product__del-btn">
+                            Удалить всё
+                        </button>
+                    </div>
+                    <div class="product__cart-icon product__cart-icon--rst">
+                        <button class="btn btn--sm btn--f">
+                            <svg class="" width="18" height="18">
+                                <use xlink:href="../../icons/main_0.svg#trash"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="products__item product">
+                    <div class="product__cb">
+                        <label for="id-1" class="product__label cb">
+                            <input class="product__field cb__input" id="id-1" type="checkbox">
+                            <div class="product__img--wrp cb__content">
+                                <img src="../../img/dog-1.png" alt="Айну" class="product__img">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="product__title">Айну</div>
+                    <div class="product__qnt product-qnt">
+                        <button class="product-qnt__btn btn btn--sm">-</button>
+                        <span class="product-qnt__item">1</span>
+                        <button class="product-qnt__btn btn btn--sm">+</button>
+                    </div>
+                    <div class="product__price">12000
+                        <span class="product__price--currency">₽</span>
+                    </div>
+                    <div class="product__cart-icon">
+                        <button class="btn btn--sm btn--f">
+                            <svg class="" width="18" height="18">
+                                <use xlink:href="../../icons/main_0.svg#trash"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="products__item product">
+                    <div class="product__cb">
+                        <label for="id-1" class="product__label cb">
+                            <input class="product__field cb__input" id="id-1" type="checkbox">
+                            <div class="product__img--wrp cb__content">
+                                <img src="../../img/dog-3.png" alt="Айну" class="product__img">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="product__title">Афганская Борзая</div>
+                    <div class="product__qnt product-qnt">
+                        <button class="product-qnt__btn btn btn--sm">-</button>
+                        <span class="product-qnt__item">1</span>
+                        <button class="product-qnt__btn btn btn--sm">+</button>
+                    </div>
+                    <div class="product__price">12000
+                        <span class="product__price--currency">₽</span>
+                    </div>
+                    <div class="product__cart-icon">
+                        <button class="btn btn--sm btn--f">
+                            <svg class="" width="18" height="18">
+                                <use xlink:href="../../icons/main_0.svg#trash"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="cart__total">
+                <span class="cart__total--qnt">2</span> товара на сумму
+                <span class="cart__total--sum">
+                    27000<span class="cart__total--sum-currency">₽</span>
+                </span>
+            </div>
+            <div class="cart__btn">
+                <button class="btn btn-main btn--s">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-top">
+            <header class="grid-item header">
+                <div class="header__logo-wrp centered">
+                    <a href="javascript:void(0)" class="header__logo">
+                        <svg class="icon-logo" viewBox="0 0 108 78">
+                            <use xlink:href="../../icons/main.svg#icon_logo"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- CATALOG BTN-->
+                <div class="header__btn">
+                    <button class="centered btn btn-main ">
+                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="../../icons/main.svg#icon_burger"></use>
+                        </svg>
+                        <span>Каталог</span>
+                    </button>
+                </div>
+
+                <!-- SEARCH FORM -->
+                <div class="form header__form">
+                    <input id="header-search" type="text"
+                        class="input-text form__search form__search--focus form__search--header" placeholder="Поиск">
+                    <button class="btn btn-main form__btn form__btn--header">Найти</button>
+                </div>
+                <!-- NAV -->
+                <ul class="nav">
+
+                    <li class="nav__item">
+                        <a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon_phone" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_phone"></use>
+                            </svg>
+                            <span>Бонусы</span>
+                        </a>
+
+                    </li>
+
+                    <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_box"></use>
+                            </svg>
+                            <span>Заказы</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_award"></use>
+                            </svg>
+                            <span>Акции</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                            <svg class="icon" width="32" height="33">
+                                <use xlink:href="../../icons/main.svg#icon_cart"></use>
+                            </svg>
+                            <span>Корзина (5)</span>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <div class="grid-item header__bot header__bot">
+                <div class="wrapper">
+                    <div class="breadcrumps breadcrumps--space ">
+
+                        <ul class="breadcrumps-list">
+                            <li class="breadcrumps-list__item">
+                                <a class="breadcrumps-list__link" href="javascript:void(0)">Каталог товаров</a>
+                            </li>
+
+                            <li class="breadcrumps-list__item breadcrumps__item">
+                                <a class="breadcrumps-list__link" href="javascript:void(0)">Собачки</a>
+                            </li>
+
+                            <li class="breadcrumps-list__item breadcrumps__item--current">
+                                <a class="breadcrumps-list__link" href="javascript:void(0)">Айну</a>
+                            </li>
+                        </ul>
+                        <div class="breadcrumps__title">Айну</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <!-- GRID -->
+        <div class="grid grid-main grid-main-product-mob bg-content">
+            <main class="grid-item grid-item--12">
+
+                <div class="product-card grid">
+                    <!-- IMG -->
+                    <div class="grid-item grid-item--5 product-card__aside">
+                        <div class="product-card__img-wrapper">
+                            <img class="product-card__img" src="../../img/dog-1.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- INFO -->
+                    <div class="grid-item grid-item--7 product-card__main">
+                        <div class="product-info__title">Характеристика Айну</div>
+
+                        <ul class="product-info">
+                            <li class="product-info__item">
+                                <span class="product-info__item--sm">Тип</span>
+                                <span class="product-info__item--md">Охотничьи, Компаньоны</span>
+                            </li>
+
+                            <li class="product-info__item">
+                                <span class="product-info__item--sm">Размеры</span>
+                                <span class="product-info__item--md">Средняя (11-25кг)</span>
+                            </li>
+
+                            <li class="product-info__item">
+                                <span class="product-info__item--sm">Основные черты</span>
+                                <span class="product-info__item--md">Очень преданная, Дружелюбная,
+                                    Подходит для охоты, Мало лает</span>
+                            </li>
+
+                            <li class="product-info__item">
+                                <span class="product-info__item--sm">Частые заболевания</span>
+                                <span class="product-info__item--md">Глухота, Паралич гортани </span>
+                            </li>
+
+                            <li class="product-info__item">
+                                <span class="product-info__item--sm">Интеллект</span>
+                                <span class="product-info__item--md">45%</span>
+                            </li>
+                        </ul>
+
+                        <div class="product-info__price--title">Стоимость</div>
+                        <div class="product-info__price">12 000 <span class="product-info__price--currency">₽</span>
+                        </div>
+                        <div class="product-info__btn-wrapper">
+                            <button class="btn   btn--theme-main product-info__btn">Забрать</button>
+                            <button class="btn   btn--theme-white product-info__btn product-info__btn--sm">Добавить
+                                в корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="../../script/script.js"></script>
+</body>
+
+</html>
